@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+	<div>
+		<script src="index.js"></script>
+		<form class="formClass" method="post|get" action="#" onSubmit="">
+			<div>
+			<label>Enter Email Address</label><br>
+			<input class="emailClass" name="emailName" type="text" required="required" placeholder="abcd@gmail.com"/>
+			</div>
+			<div>
+			<label>Enter Date</label><br>
+			<input class="dateClass" name="dateName" type="date" required="required"/>
+			</div>
+			<div>
+			<label>Select All Products</label><br>
+			<select class="selectClass" id="selectName" multiple="multiple">
+				<option value="Value1">Value1</option>
+				<option value="Value2">Value2</option>
+				<option value="Value3">Value3</option>
+				<option value="Value4">Value4</option>
+			</select>
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	<script>
+		new MultiSelectTag(".selectClass")
+	</script>
+</body>
+</html>
